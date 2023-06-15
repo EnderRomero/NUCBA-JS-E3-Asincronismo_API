@@ -1,5 +1,7 @@
 :root {
   --bg-button: linear-gradient(45deg, #fb5607, #ffc300);
+  --bg-card: linear-gradient(#0084ff, #003566);
+
 }
 
 body {
@@ -22,12 +24,6 @@ body {
   flex-direction: column;
 }
 
-#PokemonCard {
-  width: 20rem;
-  height: 25rem;
-  border-radius: 2rem;
-  background-color: #003566;
-}
 
 .pokemon-logo {
   width: 25rem;
@@ -59,4 +55,27 @@ body {
   font-weight: bold;
   background: var(--bg-button);
   color: white;
+}
+
+
+#PokemonCard {
+    width: 20rem;
+    height: 25rem;
+    border-radius: 2rem;
+    background: var(--bg-card);
+    border: 3px blue solid;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+.pokem {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.poke-img {
+    width: 12rem;
 }
