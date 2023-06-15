@@ -1,16 +1,38 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap"
+      rel="stylesheet"
+    />
     <title>Pokemon Search</title>
-</head>
-<body>
-    
-    <h1 class="title">Consulta tu Pokemon</h1>
+  </head>
+  <body>
+    <section class="principal-container">
+      <div class="searchContainer">
+        <img
+          class="pokemon-logo"
+          src="./assets/Logo-Pokemon.png"
+          alt="Logo Pokemon"
+        />
+        <form id="pokemonData">
+          <label for="pokeId" class="field">
+            Ingresa el Id de tu Pokemon Favorito:
+            <input type="number" name="pokeId" id="pokeId" />
+          </label>
+          <input id="searchButton" type="button" value="Buscar" />
+        </form>
+      </div>
+
+      <div id="PokemonCard"></div>
+    </section>
 
     <script src="index.js"></script>
-</body>
+  </body>
 </html>

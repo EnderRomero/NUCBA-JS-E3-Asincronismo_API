@@ -1,3 +1,62 @@
+:root {
+  --bg-button: linear-gradient(45deg, #fb5607, #ffc300);
+}
+
 body {
-    background-color: darkslategrey;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: #001d3d;
+  font-family: "Roboto", sans-serif;
+  color: aliceblue;
+}
+
+.principal-container {
+  padding-top: 5rem;
+  display: flex;
+  justify-content: center;
+  gap: 3rem;
+}
+
+.searchContainer {
+  display: flex;
+  flex-direction: column;
+}
+
+#PokemonCard {
+  width: 20rem;
+  height: 25rem;
+  border-radius: 2rem;
+  background-color: #003566;
+}
+
+.pokemon-logo {
+  width: 25rem;
+}
+
+#pokemonData {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  align-items: center;
+}
+
+.field {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+#pokeId {
+  width: 5rem;
+  padding: 0.3rem;
+  border-radius: 1rem;
+  text-align: center;
+}
+
+#searchButton {
+  border-radius: 0.5rem;
+  padding: 0.5rem 2rem;
+  font-weight: bold;
+  background: var(--bg-button);
+  color: white;
 }
