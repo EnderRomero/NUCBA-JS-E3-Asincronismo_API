@@ -1,7 +1,7 @@
 :root {
   --bg-button: linear-gradient(45deg, #fb5607, #ffc300);
   --bg-card: linear-gradient(#0084ff, #003566);
-
+  --bg-types: linear-gradient(#ae00ff, #f10a91);
 }
 
 body {
@@ -23,7 +23,6 @@ body {
   display: flex;
   flex-direction: column;
 }
-
 
 .pokemon-logo {
   width: 25rem;
@@ -57,25 +56,53 @@ body {
   color: white;
 }
 
-
 #PokemonCard {
-    width: 20rem;
-    height: 25rem;
-    border-radius: 2rem;
-    background: var(--bg-card);
-    border: 3px blue solid;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
+  width: 20rem;
+  height: 25rem;
+  border-radius: 2rem;
+  background: var(--bg-card);
+  border: 3px blue solid;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
 .pokem {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-between;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.pokem h2 {
+  color: #ffc300;
+  font-weight: bold;
+  font-size: 1.7rem;
+}
+
+.height {
+  margin: 1.5rem 0 0.5rem 0;
+}
+
+.weight {
+  margin: 0.5rem 0 1.5rem 0;
 }
 
 .poke-img {
-    width: 12rem;
+  width: 12rem;
+}
+
+.poke-types {
+  display: flex;
+  justify-content: center;
+  gap: 0.3rem;
+  flex-wrap: wrap;
+}
+
+.poke-type {
+  background: var(--bg-types);
+  color: whitesmoke;
+  padding: 0.2rem 0.5rem;
+  border-radius: 1rem;
+  font-weight: bold;
 }
